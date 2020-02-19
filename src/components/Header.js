@@ -5,36 +5,30 @@ export default function Header(props) {
   return (
     <>
     <section className="logo">
-      LOGO
+      <h1>LOGO</h1>
     </section>
     <section id="navigation">
-      <ul>
-        <li>
-          <NavLink exact={true} activeClassName="is-active" to="/tool1">
-            Tool 1
+
+          <NavLink exact={true} activeClassName="is-active" to="/">
+            Start
           </NavLink>
-        </li>
-        <li>
-          <NavLink exact={true} activeClassName="is-active" to="/tool2">
-            Tool 2
+   
+          <NavLink exact={true} activeClassName="is-active" to="/link1">
+            Link 1
           </NavLink>
-        </li>
-        <li>
-          <NavLink exact={true} activeClassName="is-active" to="/tool3">
-            Tool 3
+
+          <NavLink exact={true} activeClassName="is-active" to="/link2">
+          Link 2
           </NavLink>
-        </li>
-        <li>
-          <NavLink exact={true} activeClassName="is-active" to="/tool4">
-            Tool 4
+ 
+          <NavLink exact={true} activeClassName="is-active" to="/link3">
+          Link 3
           </NavLink>
-        </li>
-        <li>
-          <NavLink exact={true} activeClassName="is-active" to="/help">
-            Help
+      
+          <NavLink exact={true} activeClassName="is-active" to="/link4">
+          Link 4
           </NavLink>
-        </li>
-      </ul>
+
     </section>
     </>
   );
