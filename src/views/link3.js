@@ -1,11 +1,14 @@
 import React from "react";
+import {useSpring, animated} from 'react-spring'
 
 export default function Link3() {
-
+  const animProps = useSpring({opacity: 1, from: {opacity: 0}})
   return (
+
+    <animated.div style={animProps}>
     <div>
             
-      <section>      
+      <section className="content">      
         <h1>Content 3</h1>
 
       </section>
@@ -15,5 +18,6 @@ export default function Link3() {
      
       </section>
     </div>     
+    </animated.div>
   );
 }
